@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>laba 5 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style(5).css">
+</head>
+<body>
+    <header>
+        <h1>Тест</h1>
+    </header>
+    <div id="student-info"></div>
+    <div id="quiz-container"></div>
+    <div id="result"></div>
+    <div class="main">
+    <form action="laba 5.html" method="POST" id="login-form"> 
+        <legend id="secondform" class="secondh3"></legend>
+        <fieldset>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="text" class="text"><strong>Ваше ім'я:</strong></label>
+                            <input type="text" class="text" required id="first_name" name="first_name" pattern="[А-ЯІЇЄҐ]{1}[а-яіїєґ]{2,10}" placeholder="Формат: Лариса">
+                            <span class="validity"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="text" class="text"><strong>Ваше прізвище:</strong></label>
+                            <input type="text" class="text" required id="last_name" name="last_name" pattern="[А-ЯІЇЄҐ]{1}[а-яіїєґ]{4,15}" placeholder="Формат: Косач ">
+                            <span class="validity"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="text" class="text"><strong>Ваша група:</strong></label>
+                            <input type="text" class="text" required id="group" name="group" pattern="\u0422\u0420-2[1-5]{1}" placeholder="Формат: ТР-**">
+                            <span class="validity"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="difficulty" class="text" required>Виберіть рівень складності:</label>
+                            <select id="difficulty" name="difficulty">
+                            <option id="difficulty" value="easy">Легкий</option>
+                            <option id="difficulty" value="medium">Середній</option>
+                            <option id="difficulty" value="hard">Важкий</option>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" class="button3" value="Почати тест">
+        </fieldset>
+    </form>
+    <div id="quiz-container">
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-question" style="display: none;">Наступне питання</button>
+      <button id="result-of-test" style="display: none;">Результати тесту</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-content-text"></p>
+        </div>
+      </div>      
+      <div id="drag-container" style="display: none;">
+        <img class="draggable" data-value="value1" draggable="true">
+        <img src="path_to_adaptive_image.jpg" class="draggable" data-value="value2" draggable="true">
+        <img src="path_to_grid_image.jpg" class="draggable" data-value="value1" draggable="true">
+    </div>
+    <div id="drop-container" style="display: none;">
+        <div class="droppable" data-correct="adaptive"></div>
+        <div class="droppable" data-correct="grid"></div>
+        <div class="droppable" data-correct="responsive"></div>
+    </div>
+  </div> 
+   </div>
+  </div> 
+<footer>
+    <div class="div-1"></div>
+</footer>
+</body>
+<script src="js(1).js"></script>
+</html>
+
